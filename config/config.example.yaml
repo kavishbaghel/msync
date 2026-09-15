@@ -1,0 +1,8 @@
+sync:
+  - name: example-sync # name of the sync task
+    source: local-storage-path # path to the local storage location (ex: /User/user1/data)
+    source_prefix: "" # optional prefix for the sync task
+    destination: remote-storage-path # path to the remote storage location (ex: s3://bucket-name)
+    destination_prefix: "" # optional prefix for the destination storage location
+    trigger: manual # options: manual, automatic; determines when the sync should occur
+    schedule: null # cron expression for automatic sync; ignored if trigger is manual
