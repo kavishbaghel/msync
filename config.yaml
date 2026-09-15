@@ -1,0 +1,5 @@
+sync:
+  source: local-storage-path # path to the local storage location
+  destination: remote-storage-path # path to the remote storage location
+  trigger: manual # options: manual, automatic; determines when the sync should occur
+  schedule: null # cron expression for automatic sync; ignored if trigger is manual
